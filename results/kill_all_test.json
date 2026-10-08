@@ -1,0 +1,6763 @@
+{
+ "summary": {
+  "n_episodes": 60,
+  "reward": -0.8005237489899982,
+  "detection_f1": 0.0054797918828244285,
+  "detection_precision": 0.0029513888888888892,
+  "detection_recall": 0.04791632130712813,
+  "repair": 0.3934727101371788,
+  "damage": 1.0,
+  "tool_calls": 9.0,
+  "invalid_calls": 0.0,
+  "by_difficulty": {
+   "easy": {
+    "n": 20,
+    "reward": -0.714448754188014,
+    "f1": 0.003007424901956042
+   },
+   "hard": {
+    "n": 20,
+    "reward": -0.8878849201304906,
+    "f1": 0.006439372984703803
+   },
+   "medium": {
+    "n": 20,
+    "reward": -0.7992375726514905,
+    "f1": 0.006992577761813441
+   }
+  },
+  "per_type": {
+   "dead_trace": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 1.0
+   },
+   "noisy_trace": {
+    "recall": 1.0,
+    "precision": 0.004118217054263565,
+    "repair": 1.0
+   },
+   "spike": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.18279148783692545
+   },
+   "reversed_polarity": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.48115486348082054
+   },
+   "time_shift": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.30016035856453627
+   },
+   "swell_noise": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.45187034721405883
+   },
+   "powerline_noise": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.19251629506172413
+   },
+   "gain_error": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.27863799056295296
+   },
+   "geometry_error": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "repair": 0.0
+   }
+  }
+ },
+ "episodes": [
+  {
+   "reward": -0.7275923966756743,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.03333333333333333,
+    "f1": 0.00392156862745098,
+    "n_true": 30,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06041666666666667,
+    "recall": 1.0,
+    "f1": 0.11394891944990176
+   },
+   "repair": 0.5408936380212005,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 451.0,
+    "clean_traces_damaged": 451,
+    "clean_traces_killed": 451,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3404881586340338
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2645662315634324
+    },
+    "swell_noise": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.8061719403039345
+    },
+    "powerline_noise": {
+     "n_true": 21,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5043283356628036
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00000",
+    "seed": 200000,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8175758048142705,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.037037037037037035,
+    "f1": 0.0039447731755424065,
+    "n_true": 27,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05625,
+    "recall": 1.0,
+    "f1": 0.10650887573964497
+   },
+   "repair": 0.3609036171959165,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 453.0,
+    "clean_traces_damaged": 453,
+    "clean_traces_killed": 453,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.06211741845262767
+    },
+    "swell_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5868892144590856
+    },
+    "powerline_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.33783065286820174
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00001",
+    "seed": 200001,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.898619790478415,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.02040816326530612,
+    "f1": 0.003780718336483932,
+    "n_true": 49,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.08958333333333333,
+    "recall": 1.0,
+    "f1": 0.16443594646271512
+   },
+   "repair": 0.19897970070668597,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 437.0,
+    "clean_traces_damaged": 437,
+    "clean_traces_killed": 437,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.24183775032256674
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4204790534149649
+    },
+    "time_shift": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31568574110376335
+    },
+    "swell_noise": {
+     "n_true": 19,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.17564053430239449
+    },
+    "powerline_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.16986657665233354
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00002",
+    "seed": 200002,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.6436006223196902,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.043478260869565216,
+    "f1": 0.003976143141153081,
+    "n_true": 23,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.04583333333333333,
+    "recall": 1.0,
+    "f1": 0.08764940239043825
+   },
+   "repair": 0.7088226122194664,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 458.0,
+    "clean_traces_damaged": 458,
+    "clean_traces_killed": 458,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 18,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7183284242534823
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.8730084444850448
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00003",
+    "seed": 200003,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.8561654894270593,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.06666666666666667,
+    "f1": 0.00404040404040404,
+    "n_true": 15,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.027083333333333334,
+    "recall": 1.0,
+    "f1": 0.05273833671399594
+   },
+   "repair": 0.2836286171054774,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 467.0,
+    "clean_traces_damaged": 467,
+    "clean_traces_killed": 467,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.187908604358075
+    },
+    "powerline_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2666301630560215
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00004",
+    "seed": 200004,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.874424973980606,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.02,
+    "f1": 0.0037735849056603774,
+    "n_true": 50,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.09166666666666666,
+    "recall": 1.0,
+    "f1": 0.16793893129770993
+   },
+   "repair": 0.2473764671331276,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 436.0,
+    "clean_traces_damaged": 436,
+    "clean_traces_killed": 436,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1566943078289824
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3971280126984189
+    },
+    "time_shift": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.24900016631836244
+    },
+    "swell_noise": {
+     "n_true": 19,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31100166030641097
+    },
+    "powerline_noise": {
+     "n_true": 11,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.16297852277365063
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00005",
+    "seed": 200005,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.798575881773256,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.1,
+    "f1": 0.008,
+    "n_true": 20,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0375,
+    "recall": 1.0,
+    "f1": 0.07228915662650602
+   },
+   "repair": 0.3948482364534881,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 462.0,
+    "clean_traces_damaged": 462,
+    "clean_traces_killed": 462,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2967654572357852
+    },
+    "powerline_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3506668357362404
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00006",
+    "seed": 200006,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.9019956636272018,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.013513513513513514,
+    "f1": 0.0036101083032490976,
+    "n_true": 74,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.15,
+    "recall": 1.0,
+    "f1": 0.2608695652173913
+   },
+   "repair": 0.19239856444234724,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 408.0,
+    "clean_traces_damaged": 408,
+    "clean_traces_killed": 408,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6414303578794582
+    },
+    "powerline_noise": {
+     "n_true": 54,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.06556165692926287
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00007",
+    "seed": 200007,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.01
+  },
+  {
+   "reward": -0.9073772536062459,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.046153846153846156,
+    "f1": 0.011009174311926606,
+    "n_true": 65,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.12708333333333333,
+    "recall": 1.0,
+    "f1": 0.2255083179297597
+   },
+   "repair": 0.17423631847558152,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 419.0,
+    "clean_traces_damaged": 419,
+    "clean_traces_killed": 419,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.20718957633387192
+    },
+    "reversed_polarity": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.49375543154904805
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.36625239392019077
+    },
+    "swell_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.11118515801754301
+    },
+    "powerline_noise": {
+     "n_true": 35,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4010178680974266
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00008",
+    "seed": 200008,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.6323596104848659,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 20,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.03958333333333333,
+    "recall": 1.0,
+    "f1": 0.07615230460921844
+   },
+   "repair": 0.7352807790302681,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 461.0,
+    "clean_traces_damaged": 461,
+    "clean_traces_killed": 461,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.11481707574023481
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 13,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7939690693802428
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7692006029219723
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00009",
+    "seed": 200009,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8190727160536274,
+   "detection": {
+    "precision": 0.008333333333333333,
+    "recall": 0.16,
+    "f1": 0.015841584158415842,
+    "n_true": 25,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.052083333333333336,
+    "recall": 1.0,
+    "f1": 0.09900990099009901
+   },
+   "repair": 0.34601298373432926,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 455.0,
+    "clean_traces_damaged": 455,
+    "clean_traces_killed": 455,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 4,
+     "n_flagged": 480,
+     "precision": 0.008333333333333333,
+     "recall": 1.0,
+     "f1": 0.01652892561983471,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2592089858010888
+    },
+    "powerline_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2810581363295805
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00010",
+    "seed": 200010,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.8417379031297003,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.05128205128205128,
+    "f1": 0.007707129094412331,
+    "n_true": 39,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06875,
+    "recall": 1.0,
+    "f1": 0.1286549707602339
+   },
+   "repair": 0.30881706464618697,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 447.0,
+    "clean_traces_damaged": 447,
+    "clean_traces_killed": 447,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.15914622433668546
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.45049278041130547
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31654189517911224
+    },
+    "swell_noise": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.18022396894539153
+    },
+    "powerline_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.22300238196716332
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00011",
+    "seed": 200011,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8981870390183795,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 7,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0125,
+    "recall": 1.0,
+    "f1": 0.024691358024691357
+   },
+   "repair": 0.20362592196324097,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 474.0,
+    "clean_traces_damaged": 474,
+    "clean_traces_killed": 474,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3803865179919478
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.16460841775879131
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00012",
+    "seed": 200012,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.7807464652916883,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.041666666666666664,
+    "f1": 0.003968253968253968,
+    "n_true": 24,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05,
+    "recall": 1.0,
+    "f1": 0.09523809523809523
+   },
+   "repair": 0.4345388154483693,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 456.0,
+    "clean_traces_damaged": 456,
+    "clean_traces_killed": 456,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.01752823541115317
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.21726798062929245
+    },
+    "swell_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5929049595529583
+    },
+    "powerline_noise": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3319007964144192
+    },
+    "gain_error": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4697616353380829
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00013",
+    "seed": 200013,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8872072680926878,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 50,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.09583333333333334,
+    "recall": 1.0,
+    "f1": 0.17490494296577946
+   },
+   "repair": 0.2255854638146245,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 434.0,
+    "clean_traces_damaged": 434,
+    "clean_traces_killed": 434,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1176357560486413
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4239128020886329
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.27095380127129437
+    },
+    "swell_noise": {
+     "n_true": 19,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.17791189737346103
+    },
+    "powerline_noise": {
+     "n_true": 9,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.19817940764303912
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00014",
+    "seed": 200014,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7305382248211917,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 23,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.04791666666666667,
+    "recall": 1.0,
+    "f1": 0.09145129224652088
+   },
+   "repair": 0.5389235503576166,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 457.0,
+    "clean_traces_damaged": 457,
+    "clean_traces_killed": 457,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3300249186978138
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.35230705498390325
+    },
+    "powerline_noise": {
+     "n_true": 17,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5787134001068782
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4373909413632679
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00015",
+    "seed": 200015,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.7535982782326887,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.03225806451612903,
+    "f1": 0.003913894324853229,
+    "n_true": 31,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06458333333333334,
+    "recall": 1.0,
+    "f1": 0.12133072407045009
+   },
+   "repair": 0.4888895492097695,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 449.0,
+    "clean_traces_damaged": 449,
+    "clean_traces_killed": 449,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.26500680816352706
+    },
+    "swell_noise": {
+     "n_true": 11,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5911010749909874
+    },
+    "powerline_noise": {
+     "n_true": 14,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.28359331739283594
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7090754744693804
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00016",
+    "seed": 200016,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8891567303570442,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 48,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.08958333333333333,
+    "recall": 1.0,
+    "f1": 0.16443594646271512
+   },
+   "repair": 0.22168653928591145,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 437.0,
+    "clean_traces_damaged": 437,
+    "clean_traces_killed": 437,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.18920470791595556
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.366997662270532
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.19846211717663062
+    },
+    "swell_noise": {
+     "n_true": 16,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3845852838746599
+    },
+    "powerline_noise": {
+     "n_true": 15,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1743004878808767
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00017",
+    "seed": 200017,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.009
+  },
+  {
+   "reward": -0.6770901315130297,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.125,
+    "f1": 0.004098360655737705,
+    "n_true": 8,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.016666666666666666,
+    "recall": 1.0,
+    "f1": 0.03278688524590164
+   },
+   "repair": 0.641721376318203,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 472.0,
+    "clean_traces_damaged": 472,
+    "clean_traces_killed": 472,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.289509356192159
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.42213082717673267
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00018",
+    "seed": 200018,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8907125022577791,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.05555555555555555,
+    "f1": 0.007751937984496124,
+    "n_true": 36,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06875,
+    "recall": 1.0,
+    "f1": 0.1286549707602339
+   },
+   "repair": 0.21082305749994557,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 447.0,
+    "clean_traces_damaged": 447,
+    "clean_traces_killed": 447,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.29735429252050855
+    },
+    "powerline_noise": {
+     "n_true": 22,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1274200533586356
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3458401555335196
+    },
+    "geometry_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00019",
+    "seed": 200019,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.9330442778418934,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 70,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.14166666666666666,
+    "recall": 1.0,
+    "f1": 0.24817518248175183
+   },
+   "repair": 0.13391144431621335,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 412.0,
+    "clean_traces_damaged": 412,
+    "clean_traces_killed": 412,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.464885149599224
+    },
+    "swell_noise": {
+     "n_true": 27,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.17896505892263898
+    },
+    "powerline_noise": {
+     "n_true": 34,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3059871060126168
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00020",
+    "seed": 200020,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.009
+  },
+  {
+   "reward": -0.6793640924271345,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.047619047619047616,
+    "f1": 0.003992015968063872,
+    "n_true": 21,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.03958333333333333,
+    "recall": 1.0,
+    "f1": 0.07615230460921844
+   },
+   "repair": 0.6372797991776673,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 461.0,
+    "clean_traces_damaged": 461,
+    "clean_traces_killed": 461,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5034442878560001
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2719024627329134
+    },
+    "swell_noise": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7972086441501446
+    },
+    "powerline_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6331082578333096
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3959220679539971
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00021",
+    "seed": 200021,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.01
+  },
+  {
+   "reward": -0.7977059636451074,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 29,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.058333333333333334,
+    "recall": 1.0,
+    "f1": 0.11023622047244094
+   },
+   "repair": 0.40458807270978514,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 452.0,
+    "clean_traces_damaged": 452,
+    "clean_traces_killed": 452,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.036881204069432294
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6522594490344644
+    },
+    "powerline_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.22497077835310159
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3704684892240447
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00022",
+    "seed": 200022,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.01
+  },
+  {
+   "reward": -0.9300007812936674,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.015625,
+    "f1": 0.003676470588235294,
+    "n_true": 64,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.125,
+    "recall": 1.0,
+    "f1": 0.2222222222222222
+   },
+   "repair": 0.13632196682442993,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 420.0,
+    "clean_traces_damaged": 420,
+    "clean_traces_killed": 420,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.20376116363417696
+    },
+    "reversed_polarity": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.45781011325957266
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1843724372410191
+    },
+    "swell_noise": {
+     "n_true": 13,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.04509291515352827
+    },
+    "powerline_noise": {
+     "n_true": 32,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.15393224027228714
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00023",
+    "seed": 200023,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.011
+  },
+  {
+   "reward": -0.7004409529086622,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 18,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0375,
+    "recall": 1.0,
+    "f1": 0.07228915662650602
+   },
+   "repair": 0.5991180941826756,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 462.0,
+    "clean_traces_damaged": 462,
+    "clean_traces_killed": 462,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6128406285253307
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2924037989950111
+    },
+    "powerline_noise": {
+     "n_true": 11,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5798982970698019
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00024",
+    "seed": 200024,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.009
+  },
+  {
+   "reward": -0.8222409250816786,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.08695652173913043,
+    "f1": 0.007952286282306162,
+    "n_true": 23,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.04583333333333333,
+    "recall": 1.0,
+    "f1": 0.08764940239043825
+   },
+   "repair": 0.34756586355433666,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 458.0,
+    "clean_traces_damaged": 458,
+    "clean_traces_killed": 458,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6235037154374357
+    },
+    "powerline_noise": {
+     "n_true": 8,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00025",
+    "seed": 200025,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.009
+  },
+  {
+   "reward": -0.9320937672438212,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.014492753623188406,
+    "f1": 0.0036429872495446266,
+    "n_true": 69,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.13333333333333333,
+    "recall": 1.0,
+    "f1": 0.23529411764705882
+   },
+   "repair": 0.13216947826281303,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 416.0,
+    "clean_traces_damaged": 416,
+    "clean_traces_killed": 416,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.25300424866299354
+    },
+    "reversed_polarity": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.34169546689673014
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.21317021250084411
+    },
+    "swell_noise": {
+     "n_true": 30,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.17050564752641229
+    },
+    "powerline_noise": {
+     "n_true": 23,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.05017603500985438
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00026",
+    "seed": 200026,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.6762810196387855,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.15384615384615385,
+    "f1": 0.008113590263691683,
+    "n_true": 13,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.022916666666666665,
+    "recall": 1.0,
+    "f1": 0.04480651731160896
+   },
+   "repair": 0.6393243704587372,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 469.0,
+    "clean_traces_damaged": 469,
+    "clean_traces_killed": 469,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.42555792239185486
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7693798419388184
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00027",
+    "seed": 200027,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.7170594943263149,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.09090909090909091,
+    "f1": 0.011695906432748537,
+    "n_true": 33,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06875,
+    "recall": 1.0,
+    "f1": 0.1286549707602339
+   },
+   "repair": 0.5541851049146216,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 447.0,
+    "clean_traces_damaged": 447,
+    "clean_traces_killed": 447,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.25873500561591345
+    },
+    "swell_noise": {
+     "n_true": 11,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6259893298328016
+    },
+    "powerline_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5717454142028917
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00028",
+    "seed": 200028,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.009
+  },
+  {
+   "reward": -0.8697344358117717,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.04,
+    "f1": 0.007547169811320755,
+    "n_true": 50,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.09375,
+    "recall": 1.0,
+    "f1": 0.17142857142857143
+   },
+   "repair": 0.25298395856513584,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 435.0,
+    "clean_traces_damaged": 435,
+    "clean_traces_killed": 435,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2379411539139671
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5044499366917025
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5584927838919782
+    },
+    "swell_noise": {
+     "n_true": 34,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.16987632502726385
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3699591335413733
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00029",
+    "seed": 200029,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.01
+  },
+  {
+   "reward": -0.7083156604383258,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 37,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.075,
+    "recall": 1.0,
+    "f1": 0.13953488372093023
+   },
+   "repair": 0.5833686791233482,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 444.0,
+    "clean_traces_damaged": 444,
+    "clean_traces_killed": 444,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.32484094364838556
+    },
+    "swell_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7579188258817587
+    },
+    "powerline_noise": {
+     "n_true": 25,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5630416365176343
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.43916374490116694
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00030",
+    "seed": 200030,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.8232153162493037,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.04,
+    "f1": 0.0039603960396039604,
+    "n_true": 25,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05,
+    "recall": 1.0,
+    "f1": 0.09523809523809523
+   },
+   "repair": 0.34960897146178865,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 456.0,
+    "clean_traces_damaged": 456,
+    "clean_traces_killed": 456,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.22438152334410882
+    },
+    "swell_noise": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5777350627682601
+    },
+    "powerline_noise": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.40988045199429085
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00031",
+    "seed": 200031,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.9490789582724565,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 52,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.09791666666666667,
+    "recall": 1.0,
+    "f1": 0.17836812144212524
+   },
+   "repair": 0.101842083455087,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 433.0,
+    "clean_traces_damaged": 433,
+    "clean_traces_killed": 433,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.054343224398366974
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.41664825262125926
+    },
+    "time_shift": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3257839956973213
+    },
+    "powerline_noise": {
+     "n_true": 33,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00032",
+    "seed": 200032,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.6984933032372265,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 7,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0125,
+    "recall": 1.0,
+    "f1": 0.024691358024691357
+   },
+   "repair": 0.6030133935255472,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 474.0,
+    "clean_traces_damaged": 474,
+    "clean_traces_killed": 474,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5233629279610728
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5659102755725859
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00033",
+    "seed": 200033,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8250275118534054,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.07142857142857142,
+    "f1": 0.004048582995951417,
+    "n_true": 14,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.027083333333333334,
+    "recall": 1.0,
+    "f1": 0.05273833671399594
+   },
+   "repair": 0.3458963932972379,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 467.0,
+    "clean_traces_damaged": 467,
+    "clean_traces_killed": 467,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.06844664355890212
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2796165775145054
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.22928461280290308
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00034",
+    "seed": 200034,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.9193814001952437,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.03508771929824561,
+    "f1": 0.0074487895716946,
+    "n_true": 57,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.11458333333333333,
+    "recall": 1.0,
+    "f1": 0.205607476635514
+   },
+   "repair": 0.15378841003781793,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 425.0,
+    "clean_traces_damaged": 425,
+    "clean_traces_killed": 425,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.17030651419839538
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.505459771297593
+    },
+    "time_shift": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.45844377079330384
+    },
+    "swell_noise": {
+     "n_true": 26,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.06889708032769455
+    },
+    "powerline_noise": {
+     "n_true": 17,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3095005576359874
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00035",
+    "seed": 200035,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.7283169551918385,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.1111111111111111,
+    "f1": 0.00408997955010225,
+    "n_true": 9,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.01875,
+    "recall": 1.0,
+    "f1": 0.03680981595092025
+   },
+   "repair": 0.5392761100662209,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 471.0,
+    "clean_traces_damaged": 471,
+    "clean_traces_killed": 471,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.33862906943583654
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.277451812927836
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7826941564328067
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00036",
+    "seed": 200036,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  },
+  {
+   "reward": -0.7074804899001558,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.07142857142857142,
+    "f1": 0.011494252873563218,
+    "n_true": 42,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0875,
+    "recall": 1.0,
+    "f1": 0.16091954022988506
+   },
+   "repair": 0.5735447673261252,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 438.0,
+    "clean_traces_damaged": 438,
+    "clean_traces_killed": 438,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.18666611821812035
+    },
+    "swell_noise": {
+     "n_true": 32,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6004858747269068
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00037",
+    "seed": 200037,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.85042929081868,
+   "detection": {
+    "precision": 0.0125,
+    "recall": 0.13636363636363635,
+    "f1": 0.022900763358778626,
+    "n_true": 44,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0875,
+    "recall": 1.0,
+    "f1": 0.16091954022988506
+   },
+   "repair": 0.27624065500386136,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 438.0,
+    "clean_traces_damaged": 438,
+    "clean_traces_killed": 438,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 6,
+     "n_flagged": 480,
+     "precision": 0.0125,
+     "recall": 1.0,
+     "f1": 0.024691358024691357,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4411322283219299
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3502739102983072
+    },
+    "swell_noise": {
+     "n_true": 8,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.04240477199840757
+    },
+    "powerline_noise": {
+     "n_true": 18,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00038",
+    "seed": 200038,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.6881994902800846,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.047619047619047616,
+    "f1": 0.003992015968063872,
+    "n_true": 21,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.03958333333333333,
+    "recall": 1.0,
+    "f1": 0.07615230460921844
+   },
+   "repair": 0.6196090034717668,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 461.0,
+    "clean_traces_damaged": 461,
+    "clean_traces_killed": 461,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.46677893740430043
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 8,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7985626431967712
+    },
+    "powerline_noise": {
+     "n_true": 8,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5820636237410792
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00039",
+    "seed": 200039,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7530333067940675,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.07142857142857142,
+    "f1": 0.007874015748031496,
+    "n_true": 28,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05625,
+    "recall": 1.0,
+    "f1": 0.10650887573964497
+   },
+   "repair": 0.4860593706638334,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 453.0,
+    "clean_traces_damaged": 453,
+    "clean_traces_killed": 453,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.23649514683630876
+    },
+    "swell_noise": {
+     "n_true": 16,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5562610586299006
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00040",
+    "seed": 200040,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.7889969289968188,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.09090909090909091,
+    "f1": 0.011695906432748537,
+    "n_true": 33,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06666666666666667,
+    "recall": 1.0,
+    "f1": 0.125
+   },
+   "repair": 0.4103102355736139,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 448.0,
+    "clean_traces_damaged": 448,
+    "clean_traces_killed": 448,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.32896381937998875
+    },
+    "swell_noise": {
+     "n_true": 18,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3223424231901484
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.29007325887330554
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00041",
+    "seed": 200041,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7422231756783464,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.14285714285714285,
+    "f1": 0.004106776180698152,
+    "n_true": 7,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0125,
+    "recall": 1.0,
+    "f1": 0.024691358024691357
+   },
+   "repair": 0.511446872462609,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 474.0,
+    "clean_traces_damaged": 474,
+    "clean_traces_killed": 474,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5915472414100557
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3169525928921217
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.8546756800439643
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00042",
+    "seed": 200042,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7687530169133314,
+   "detection": {
+    "precision": 0.010416666666666666,
+    "recall": 0.12195121951219512,
+    "f1": 0.019193857965451054,
+    "n_true": 41,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.08541666666666667,
+    "recall": 1.0,
+    "f1": 0.15738963531669867
+   },
+   "repair": 0.4433001082078862,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 439.0,
+    "clean_traces_damaged": 439,
+    "clean_traces_killed": 439,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 5,
+     "n_flagged": 480,
+     "precision": 0.010416666666666666,
+     "recall": 1.0,
+     "f1": 0.020618556701030927,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5977790557531706
+    },
+    "powerline_noise": {
+     "n_true": 17,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.18808905170538998
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00043",
+    "seed": 200043,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.9525014281780355,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.02564102564102564,
+    "f1": 0.007168458781362007,
+    "n_true": 78,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.15833333333333333,
+    "recall": 1.0,
+    "f1": 0.2733812949640288
+   },
+   "repair": 0.08782868486256702,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 404.0,
+    "clean_traces_damaged": 404,
+    "clean_traces_killed": 404,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3763037351875941
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.13051012573714582
+    },
+    "swell_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.19270855383124127
+    },
+    "powerline_noise": {
+     "n_true": 53,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.26225352572792676
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00044",
+    "seed": 200044,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.6827983111288755,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.07142857142857142,
+    "f1": 0.007874015748031496,
+    "n_true": 28,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.058333333333333334,
+    "recall": 1.0,
+    "f1": 0.11023622047244094
+   },
+   "repair": 0.6265293619942176,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 452.0,
+    "clean_traces_damaged": 452,
+    "clean_traces_killed": 452,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5554333612077869
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "powerline_noise": {
+     "n_true": 22,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6105434278828418
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00045",
+    "seed": 200045,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7905906248866961,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.03125,
+    "f1": 0.00390625,
+    "n_true": 32,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0625,
+    "recall": 1.0,
+    "f1": 0.11764705882352941
+   },
+   "repair": 0.41491250022660797,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 450.0,
+    "clean_traces_damaged": 450,
+    "clean_traces_killed": 450,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.007416385519303769
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.2020352931059973
+    },
+    "swell_noise": {
+     "n_true": 17,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5961183647257025
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00046",
+    "seed": 200046,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.9160160316459707,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 72,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.14583333333333334,
+    "recall": 1.0,
+    "f1": 0.2545454545454545
+   },
+   "repair": 0.16796793670805873,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 410.0,
+    "clean_traces_damaged": 410,
+    "clean_traces_killed": 410,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.13933642324610332
+    },
+    "reversed_polarity": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5382304832346512
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.41800926973831
+    },
+    "swell_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.12505258159387117
+    },
+    "powerline_noise": {
+     "n_true": 44,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.13823048323465112
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00047",
+    "seed": 200047,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.7142192203442564,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 16,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.03125,
+    "recall": 1.0,
+    "f1": 0.06060606060606061
+   },
+   "repair": 0.5715615593114871,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 465.0,
+    "clean_traces_damaged": 465,
+    "clean_traces_killed": 465,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4220032397089485
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "powerline_noise": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.407902366043745
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.8535642733034265
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00048",
+    "seed": 200048,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7731422458510191,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.08823529411764706,
+    "f1": 0.011673151750972763,
+    "n_true": 34,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.06875,
+    "recall": 1.0,
+    "f1": 0.1286549707602339
+   },
+   "repair": 0.44204235654698915,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 447.0,
+    "clean_traces_damaged": 447,
+    "clean_traces_killed": 447,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.00194752621138287
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.30957971504477505
+    },
+    "swell_noise": {
+     "n_true": 8,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6220207627775456
+    },
+    "powerline_noise": {
+     "n_true": 13,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3021747701271975
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00049",
+    "seed": 200049,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8150486971386666,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.09375,
+    "f1": 0.01171875,
+    "n_true": 32,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05416666666666667,
+    "recall": 1.0,
+    "f1": 0.10276679841897234
+   },
+   "repair": 0.35818385572266687,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 454.0,
+    "clean_traces_damaged": 454,
+    "clean_traces_killed": 454,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.30087446737626444
+    },
+    "reversed_polarity": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5023525797097442
+    },
+    "time_shift": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31573870057673303
+    },
+    "swell_noise": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.27733007227242523
+    },
+    "powerline_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.13459557609344253
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00050",
+    "seed": 200050,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.677237520259159,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.09523809523809523,
+    "f1": 0.007984031936127744,
+    "n_true": 21,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.041666666666666664,
+    "recall": 1.0,
+    "f1": 0.08
+   },
+   "repair": 0.6375409275455544,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 460.0,
+    "clean_traces_damaged": 460,
+    "clean_traces_killed": 460,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.46613173801866736
+    },
+    "swell_noise": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7879897395777098
+    },
+    "powerline_noise": {
+     "n_true": 12,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.629854876808737
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00051",
+    "seed": 200051,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7649091423450001,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 37,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.07708333333333334,
+    "recall": 1.0,
+    "f1": 0.14313346228239845
+   },
+   "repair": 0.4701817153099998,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 443.0,
+    "clean_traces_damaged": 443,
+    "clean_traces_killed": 443,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.04637052417513706
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.29326438768299323
+    },
+    "swell_noise": {
+     "n_true": 15,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6143861677811663
+    },
+    "powerline_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.1069364270777279
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00052",
+    "seed": 200052,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.8441864586499879,
+   "detection": {
+    "precision": 0.004166666666666667,
+    "recall": 0.045454545454545456,
+    "f1": 0.007633587786259542,
+    "n_true": 44,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.08125,
+    "recall": 1.0,
+    "f1": 0.15028901734104047
+   },
+   "repair": 0.3039934949137646,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 441.0,
+    "clean_traces_damaged": 441,
+    "clean_traces_killed": 441,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 2,
+     "n_flagged": 480,
+     "precision": 0.004166666666666667,
+     "recall": 1.0,
+     "f1": 0.008298755186721992,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.16794348403852832
+    },
+    "reversed_polarity": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5006384086859308
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6373780781972951
+    },
+    "swell_noise": {
+     "n_true": 7,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.33037547717736804
+    },
+    "powerline_noise": {
+     "n_true": 15,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.30601548451186694
+    },
+    "geometry_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00053",
+    "seed": 200053,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7632648517348957,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 42,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.08541666666666667,
+    "recall": 1.0,
+    "f1": 0.15738963531669867
+   },
+   "repair": 0.47347029653020867,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 439.0,
+    "clean_traces_damaged": 439,
+    "clean_traces_killed": 439,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3079113491066422
+    },
+    "powerline_noise": {
+     "n_true": 38,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5020484501358453
+    },
+    "geometry_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00054",
+    "seed": 200054,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8108935147541827,
+   "detection": {
+    "precision": 0.0020833333333333333,
+    "recall": 0.016666666666666666,
+    "f1": 0.003703703703703704,
+    "n_true": 60,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.125,
+    "recall": 1.0,
+    "f1": 0.2222222222222222
+   },
+   "repair": 0.37450926678793084,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 420.0,
+    "clean_traces_damaged": 420,
+    "clean_traces_killed": 420,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 1,
+     "n_flagged": 480,
+     "precision": 0.0020833333333333333,
+     "recall": 1.0,
+     "f1": 0.004158004158004158,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.11868494399231694
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "swell_noise": {
+     "n_true": 18,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.6647993191242105
+    },
+    "powerline_noise": {
+     "n_true": 34,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.15775032193821573
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.7016437145780481
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00055",
+    "seed": 200055,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.8795501325534489,
+   "detection": {
+    "precision": 0.010416666666666666,
+    "recall": 0.11363636363636363,
+    "f1": 0.019083969465648856,
+    "n_true": 44,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.0875,
+    "recall": 1.0,
+    "f1": 0.16091954022988506
+   },
+   "repair": 0.22181576542745327,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 438.0,
+    "clean_traces_damaged": 438,
+    "clean_traces_killed": 438,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 5,
+     "n_flagged": 480,
+     "precision": 0.010416666666666666,
+     "recall": 1.0,
+     "f1": 0.020618556701030927,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3788469761296205
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3315080972288198
+    },
+    "swell_noise": {
+     "n_true": 18,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.07460691905530764
+    },
+    "powerline_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 3,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.10925569544144798
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00056",
+    "seed": 200056,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.7218766238866033,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 28,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.058333333333333334,
+    "recall": 1.0,
+    "f1": 0.11023622047244094
+   },
+   "repair": 0.5562467522267933,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 452.0,
+    "clean_traces_damaged": 452,
+    "clean_traces_killed": 452,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.4750994588904839
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31743397324561684
+    },
+    "powerline_noise": {
+     "n_true": 23,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.577494592618005
+    },
+    "gain_error": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00057",
+    "seed": 200057,
+    "regime": "B",
+    "difficulty": "easy",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.007
+  },
+  {
+   "reward": -0.8108329807252332,
+   "detection": {
+    "precision": 0.00625,
+    "recall": 0.057692307692307696,
+    "f1": 0.011278195488721804,
+    "n_true": 52,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.10416666666666667,
+    "recall": 1.0,
+    "f1": 0.18867924528301888
+   },
+   "repair": 0.3670558430608117,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 430.0,
+    "clean_traces_damaged": 430,
+    "clean_traces_killed": 430,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 3,
+     "n_flagged": 480,
+     "precision": 0.00625,
+     "recall": 1.0,
+     "f1": 0.012422360248447204,
+     "repair": 1.0
+    },
+    "spike": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5
+    },
+    "time_shift": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.31439194937716247
+    },
+    "swell_noise": {
+     "n_true": 27,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.5169674052002919
+    },
+    "powerline_noise": {
+     "n_true": 10,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00058",
+    "seed": 200058,
+    "regime": "B",
+    "difficulty": "medium",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.008
+  },
+  {
+   "reward": -0.8791118943246503,
+   "detection": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n_true": 29,
+    "n_flagged": 480
+   },
+   "localisation": {
+    "precision": 0.05,
+    "recall": 1.0,
+    "f1": 0.09523809523809523
+   },
+   "repair": 0.24177621135069932,
+   "damage": 1.0,
+   "damage_detail": {
+    "data_damage_sum": 456.0,
+    "clean_traces_damaged": 456,
+    "clean_traces_killed": 456,
+    "clean_gathers_with_header_damage": 0
+   },
+   "per_type": {
+    "dead_trace": {
+     "n_true": 1,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 1.0
+    },
+    "noisy_trace": {
+     "n_true": 0,
+     "n_flagged": 480,
+     "precision": 0.0,
+     "recall": 1.0,
+     "f1": 0.0,
+     "repair": null
+    },
+    "spike": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "reversed_polarity": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.46602893349508334
+    },
+    "time_shift": {
+     "n_true": 6,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.3643841886240473
+    },
+    "swell_noise": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.20155829995115662
+    },
+    "powerline_noise": {
+     "n_true": 4,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    },
+    "gain_error": {
+     "n_true": 5,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.19065955273797586
+    },
+    "geometry_error": {
+     "n_true": 2,
+     "n_flagged": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "repair": 0.0
+    }
+   },
+   "n_calls": 9,
+   "n_invalid_calls": 0,
+   "weights": {
+    "detection": 0.5,
+    "repair": 0.5,
+    "damage": 1.0
+   },
+   "task": {
+    "task_id": "test-00059",
+    "seed": 200059,
+    "regime": "B",
+    "difficulty": "hard",
+    "n_gathers": 4,
+    "defect_types": [
+     "dead_trace",
+     "noisy_trace",
+     "spike",
+     "reversed_polarity",
+     "time_shift",
+     "swell_noise",
+     "powerline_noise",
+     "gain_error",
+     "geometry_error"
+    ],
+    "geometry_prob": 0.25,
+    "budget": 120
+   },
+   "seconds": 0.006
+  }
+ ]
+}

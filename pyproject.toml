@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seismic-qc-gym"
+version = "0.1.0"
+description = "A training and evaluation environment for tool-using seismic QC agents: synthetic pre-stack shot gathers with planted defects, QC tools over MCP, and a programmatic grader."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Saif Ur Rehman" }]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=1.40"]
+mcp = ["mcp>=2.0"]
+segy = ["segyio>=1.9"]
+dev = ["pytest>=7"]
+all = ["openai>=1.40", "mcp>=2.0", "segyio>=1.9", "pytest>=7"]
+
+[project.scripts]
+qcgym-eval = "seismic_qc_gym.eval:main"
+qcgym-mcp = "seismic_qc_gym.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
